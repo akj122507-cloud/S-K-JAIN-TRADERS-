@@ -1,70 +1,300 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>S K Jain Traders | Building Material Supplier</title>
-<meta name="description" content="S K Jain Traders - Cement and building material supplier. Retail, wholesale and delivery service.">
+
+<meta name="description" content="S K Jain Traders - Building Material Supplier. Cement, Ret, Bajri, Eent, Tiles and Delivery. Retail and wholesale supply.">
+
 <style>
-*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#222;background:#f7f7f7}
-header{background:#111827;color:#fff;padding:22px 6%;display:flex;justify-content:space-between;align-items:center;gap:20px}
-.logo{font-size:25px;font-weight:800}.tag{font-size:13px;color:#d1d5db}
-.hero{padding:70px 6%;background:linear-gradient(135deg,#fff,#e8eef7)}
-.hero h1{font-size:42px;margin:0 0 12px}.hero p{font-size:19px;line-height:1.6;max-width:700px}
-.btn{display:inline-block;padding:13px 20px;border-radius:8px;text-decoration:none;font-weight:700;margin:8px 8px 0 0;background:#111827;color:#fff}
-.btn.alt{background:#fff;color:#111827;border:1px solid #cbd5e1}
-section{padding:45px 6%}.title{font-size:30px;margin:0 0 24px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px}
-.card{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:22px;box-shadow:0 4px 14px #00000008}
-.card h3{margin:0 0 8px}.card p{margin:0;color:#555;line-height:1.5}
-.contact{background:#111827;color:#fff}.contact p{line-height:1.7}
-footer{padding:20px 6%;font-size:13px;color:#666;text-align:center;background:#fff}
-@media(max-width:600px){.hero h1{font-size:32px}header{display:block}.tag{margin-top:5px}}
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+body{
+  font-family:Arial, sans-serif;
+  color:#111827;
+  background:#f8fafc;
+  line-height:1.6;
+}
+
+header{
+  background:#111827;
+  color:white;
+  padding:22px 6%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:20px;
+}
+
+.logo{
+  font-size:26px;
+  font-weight:800;
+}
+
+.header-text{
+  font-size:14px;
+  color:#d1d5db;
+}
+
+.hero{
+  padding:75px 6%;
+  background:linear-gradient(135deg,#f8fafc,#e5e7eb);
+}
+
+.hero h1{
+  font-size:46px;
+  line-height:1.1;
+  margin-bottom:20px;
+  max-width:750px;
+}
+
+.hero p{
+  font-size:21px;
+  color:#4b5563;
+  max-width:750px;
+  margin-bottom:30px;
+}
+
+.btn{
+  display:inline-block;
+  padding:14px 24px;
+  margin:5px;
+  border-radius:10px;
+  text-decoration:none;
+  font-weight:700;
+  background:#111827;
+  color:white;
+}
+
+.btn.whatsapp{
+  background:#16a34a;
+}
+
+section{
+  padding:55px 6%;
+}
+
+.title{
+  font-size:36px;
+  margin-bottom:30px;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+}
+
+.card{
+  background:white;
+  padding:28px;
+  border-radius:15px;
+  border:1px solid #e5e7eb;
+  box-shadow:0 5px 20px rgba(0,0,0,.05);
+}
+
+.card h3{
+  font-size:24px;
+  margin-bottom:10px;
+}
+
+.card p{
+  color:#6b7280;
+}
+
+.contact{
+  background:#111827;
+  color:white;
+}
+
+.contact .title{
+  color:white;
+}
+
+.contact-box{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+.contact-card{
+  background:#1f2937;
+  padding:25px;
+  border-radius:15px;
+}
+
+.contact-card h3{
+  margin-bottom:8px;
+}
+
+.contact-card a{
+  color:white;
+  text-decoration:none;
+  font-size:18px;
+}
+
+.address{
+  font-size:18px;
+  color:#e5e7eb;
+}
+
+footer{
+  background:#030712;
+  color:#9ca3af;
+  text-align:center;
+  padding:25px;
+}
+
+@media(max-width:600px){
+  header{
+    display:block;
+  }
+
+  .header-text{
+    margin-top:5px;
+  }
+
+  .hero h1{
+    font-size:38px;
+  }
+
+  .hero p{
+    font-size:18px;
+  }
+
+  .title{
+    font-size:30px;
+  }
+}
 </style>
 </head>
+
 <body>
+
 <header>
   <div class="logo">S K JAIN TRADERS</div>
-  <div class="tag">Building Material Supplier</div>
+  <div class="header-text">Building Material Supplier</div>
 </header>
 
-<div class="hero">
-  <h1>Complete Building Material Solutions</h1>
-  <p>Retail & wholesale supply of cement and construction materials, with delivery service for your project.</p>
-  <a class="btn" href="tel:9971010724">Call Now</a>
-  <a class="btn alt" href="https://wa.me/919971010724">WhatsApp</a>
-</div>
+<section class="hero">
 
-<section>
-  <h2 class="title">Our Products</h2>
-  <div class="grid">
-    <div class="card"><h3>Cement</h3><p>Quality cement supply for construction projects.</p></div>
-    <div class="card"><h3>Sand (Ret)</h3><p>Construction sand for different building needs.</p></div>
-    <div class="card"><h3>Bajri</h3><p>Aggregate material for construction work.</p></div>
-    <div class="card"><h3>Bricks</h3><p>Bricks and related masonry materials.</p></div>
-    <div class="card"><h3>Brick Tiles</h3><p>Tiles and masonry-related materials.</p></div>
-    <div class="card"><h3>Dust</h3><p>Construction dust and aggregate materials.</p></div>
-  </div>
+  <h1>Complete Building Material Solutions</h1>
+
+  <p>
+    Retail & wholesale supply of cement and construction materials,
+    with reliable delivery service for your project.
+  </p>
+
+  <a class="btn" href="tel:9312936134">
+    📞 Call Now
+  </a>
+
+  <a class="btn whatsapp"
+     href="https://wa.me/917210727274"
+     target="_blank">
+    💬 WhatsApp
+  </a>
+
 </section>
 
 <section>
-  <h2 class="title">Why Choose Us</h2>
+
+  <h2 class="title">Our Products</h2>
+
   <div class="grid">
-    <div class="card"><h3>Retail & Wholesale</h3><p>Material supply for individual and bulk requirements.</p></div>
-    <div class="card"><h3>Delivery Available</h3><p>Construction material delivery through our transport service.</p></div>
-    <div class="card"><h3>Local Supply</h3><p>Serving customers around Sahibabad, Bhopura and nearby areas.</p></div>
+
+    <div class="card">
+      <h3>🧱 Cement</h3>
+      <p>Quality cement supply for residential and commercial construction.</p>
+    </div>
+
+    <div class="card">
+      <h3>🏗️ Ret</h3>
+      <p>Ret supply for construction and building projects.</p>
+    </div>
+
+    <div class="card">
+      <h3>⛰️ Bajri</h3>
+      <p>Bajri supply with delivery service.</p>
+    </div>
+
+    <div class="card">
+      <h3>🧱 Eent</h3>
+      <p>Bricks for all types of construction work.</p>
+    </div>
+
+    <div class="card">
+      <h3>◼️ Tiles</h3>
+      <p>Tiles and other construction-related materials.</p>
+    </div>
+
+    <div class="card">
+      <h3>🚚 Delivery</h3>
+      <p>Building material delivery service for your project.</p>
+    </div>
+
   </div>
+
 </section>
 
 <section class="contact">
+
   <h2 class="title">Contact S K Jain Traders</h2>
-  <p><strong>Address:</strong> Near DLF Chowki, Bhopura, Sahibabad, Ghaziabad, Uttar Pradesh</p>
-  <p><strong>Phone:</strong> 9971010724 / 9312936134</p>
-  <p><strong>Business Hours:</strong> 24 Hours</p>
-  <a class="btn" href="tel:9971010724">Call 9971010724</a><a class="btn" href="tel:9312936134">Call 9312936134</a>
-  <a class="btn" href="https://wa.me/919971010724">WhatsApp</a>
+
+  <div class="contact-box">
+
+    <div class="contact-card">
+      <h3>Director</h3>
+      <p>Ramesh Jain</p>
+      <a href="tel:9971010724">📞 9971010724</a>
+    </div>
+
+    <div class="contact-card">
+      <h3>Contact</h3>
+      <p>Aman Jain</p>
+      <a href="tel:7210727274">📞 7210727274</a>
+    </div>
+
+    <div class="contact-card">
+      <h3>Office</h3>
+      <a href="tel:9312936134">📞 9312936134</a>
+    </div>
+
+  </div>
+
+  <br>
+
+  <div class="contact-card">
+    <h3>📍 Address</h3>
+    <p class="address">
+      D-119, Gali No. 8, Rajeev Nagar,<br>
+      Near VARUN TVS,<br>
+      Bhopura, Sahibabad, Ghaziabad,<br>
+      Uttar Pradesh - 201005
+    </p>
+  </div>
+
+  <br>
+
+  <a class="btn" href="tel:9971010724">Call Director</a>
+
+  <a class="btn whatsapp"
+     href="https://wa.me/917210727274"
+     target="_blank">
+    WhatsApp Aman
+  </a>
+
 </section>
 
-<footer>© 2026 S K Jain Traders. All rights reserved.</footer>
+<footer>
+  © 2026 S K Jain Traders. All Rights Reserved.
+</footer>
+
 </body>
 </html>
