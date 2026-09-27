@@ -1,329 +1,377 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>S K Jain Traders | Building Material Supplier</title>
+  <title>S K Jain Traders | Building Material Supplier</title>
 
-<meta name="description" content="S K Jain Traders - Building Material Supplier in Bhopura, Sahibabad, Ghaziabad. Cement, Ret, Bajri, Eent, Tiles, Wholesale, Retail and Delivery.">
+  <meta name="description"
+    content="S K Jain Traders - Building material supplier for cement, bajri, eent, tiles and construction materials with delivery service in Sahibabad, Ghaziabad.">
 
-<style>
-*{box-sizing:border-box;margin:0;padding:0}
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-html{scroll-behavior:smooth}
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f5f7fb;
+      color: #111827;
+      line-height: 1.6;
+    }
 
-body{
-font-family:Arial,Helvetica,sans-serif;
-background:#f6f8fb;
-color:#111827;
-line-height:1.6;
-}
+    header {
+      background: #101827;
+      color: white;
+      padding: 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
 
-header{
-background:#0f172a;
-color:#fff;
-position:sticky;
-top:0;
-z-index:1000;
-box-shadow:0 3px 15px rgba(0,0,0,.18);
-}
+    .nav {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
 
-.nav{
-max-width:1200px;
-margin:auto;
-padding:17px 20px;
-display:flex;
-justify-content:space-between;
-align-items:center;
-}
+    .logo {
+      font-size: 24px;
+      font-weight: 800;
+      letter-spacing: 1px;
+    }
 
-.logo{
-font-size:25px;
-font-weight:800;
-}
+    .hero {
+      background: linear-gradient(135deg, #eef2ff, #ffffff);
+      padding: 75px 20px;
+    }
 
-nav a{
-color:#fff;
-text-decoration:none;
-margin-left:22px;
-font-weight:600;
-}
+    .hero-inner {
+      max-width: 1100px;
+      margin: auto;
+    }
 
-.hero{
-background:linear-gradient(135deg,#0f172a,#334155);
-color:#fff;
-padding:85px 20px;
-}
+    .hero h1 {
+      font-size: clamp(42px, 8vw, 76px);
+      line-height: 1.05;
+      max-width: 850px;
+      margin-bottom: 25px;
+      font-weight: 800;
+    }
 
-.hero-inner{
-max-width:1200px;
-margin:auto;
-display:grid;
-grid-template-columns:1.2fr .8fr;
-gap:40px;
-align-items:center;
-}
+    .hero p {
+      max-width: 750px;
+      font-size: 20px;
+      color: #4b5563;
+      margin-bottom: 30px;
+    }
 
-.badge{
-display:inline-block;
-background:#dcfce7;
-color:#15803d;
-padding:7px 14px;
-border-radius:30px;
-font-weight:bold;
-margin-bottom:18px;
-}
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
 
-.hero h1{
-font-size:clamp(42px,7vw,70px);
-line-height:1.05;
-margin-bottom:22px;
-}
+    .btn {
+      display: inline-block;
+      padding: 16px 26px;
+      border-radius: 14px;
+      text-decoration: none;
+      font-size: 17px;
+      font-weight: 700;
+      transition: 0.2s;
+    }
 
-.hero p{
-font-size:20px;
-color:#dbe4ef;
-max-width:720px;
-margin-bottom:28px;
-}
+    .btn:hover {
+      transform: translateY(-2px);
+    }
 
-.buttons{
-display:flex;
-flex-wrap:wrap;
-gap:12px;
-}
+    .call {
+      background: #111827;
+      color: white;
+    }
 
-.btn{
-display:inline-block;
-padding:14px 21px;
-border-radius:10px;
-text-decoration:none;
-font-weight:800;
-border:none;
-cursor:pointer;
-}
+    .whatsapp {
+      background: #16a34a;
+      color: white;
+    }
 
-.btn-call{
-background:#fff;
-color:#0f172a;
-}
+    .location {
+      background: white;
+      color: #111827;
+      border: 2px solid #d1d5db;
+    }
 
-.btn-whatsapp{
-background:#16a34a;
-color:#fff;
-}
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 70px 20px;
+    }
 
-.btn-quote{
-background:#f59e0b;
-color:#111827;
-}
+    .section-title {
+      text-align: center;
+      font-size: 42px;
+      margin-bottom: 45px;
+      font-weight: 800;
+    }
 
-.btn-map{
-background:#e5e7eb;
-color:#111827;
-}
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
 
-.hero-card{
-background:#1e293b;
-border:1px solid #475569;
-border-radius:22px;
-padding:30px;
-box-shadow:0 15px 40px rgba(0,0,0,.2);
-}
+    .card {
+      background: white;
+      border-radius: 18px;
+      padding: 28px;
+      box-shadow: 0 5px 25px rgba(0,0,0,0.07);
+      text-align: center;
+    }
 
-.hero-card h2{
-margin-bottom:18px;
-font-size:27px;
-}
+    .card h3 {
+      font-size: 23px;
+      margin-bottom: 10px;
+    }
 
-.hero-card p{
-font-size:16px;
-margin:9px 0;
-color:#e2e8f0;
-}
+    .card p {
+      color: #6b7280;
+    }
 
-section{
-padding:70px 20px;
-}
+    .contact-box {
+      background: #1f2937;
+      color: white;
+      border-radius: 25px;
+      padding: 40px;
+    }
 
-.container{
-max-width:1200px;
-margin:auto;
-}
+    .contact-row {
+      margin-bottom: 25px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #374151;
+    }
 
-.title{
-text-align:center;
-font-size:40px;
-margin-bottom:40px;
-}
+    .contact-row:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+    }
 
-.products{
-display:grid;
-grid-template-columns:repeat(5,1fr);
-gap:18px;
-}
+    .label {
+      color: #9ca3af;
+      font-weight: 700;
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
 
-.product{
-background:#fff;
-border:1px solid #e5e7eb;
-border-radius:18px;
-padding:25px 15px;
-text-align:center;
-box-shadow:0 7px 25px rgba(0,0,0,.06);
-transition:.2s;
-}
+    .value {
+      font-size: 21px;
+    }
 
-.product:hover{
-transform:translateY(-5px);
-}
+    .contact-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 30px;
+    }
 
-.icon{
-font-size:42px;
-margin-bottom:10px;
-}
+    footer {
+      background: #101827;
+      color: #9ca3af;
+      text-align: center;
+      padding: 30px 20px;
+    }
 
-.product h3{
-font-size:21px;
-margin-bottom:7px;
-}
+    @media (max-width: 600px) {
+      .hero {
+        padding: 55px 20px;
+      }
 
-.product p{
-font-size:14px;
-color:#64748b;
-}
+      .hero p {
+        font-size: 18px;
+      }
 
-.services{
-background:#0f172a;
-color:#fff;
-}
+      .buttons {
+        flex-direction: column;
+      }
 
-.services .title{
-color:#fff;
-}
+      .btn {
+        text-align: center;
+        width: 100%;
+      }
 
-.service-grid{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:20px;
-}
+      .section-title {
+        font-size: 34px;
+      }
 
-.service{
-background:#1e293b;
-border:1px solid #334155;
-border-radius:18px;
-padding:30px;
-}
+      .contact-box {
+        padding: 28px 22px;
+      }
+    }
+  </style>
+</head>
 
-.service h3{
-font-size:22px;
-margin-bottom:10px;
-}
+<body>
 
-.service p{
-color:#cbd5e1;
-}
+<header>
+  <div class="nav">
+    <div class="logo">S K JAIN TRADERS</div>
+  </div>
+</header>
 
-.enquiry{
-background:#eef2ff;
-}
+<main>
 
-.enquiry-box{
-background:#fff;
-border-radius:22px;
-padding:35px;
-text-align:center;
-box-shadow:0 8px 30px rgba(0,0,0,.07);
-}
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
 
-.enquiry-box p{
-max-width:700px;
-margin:0 auto 25px;
-color:#64748b;
-font-size:18px;
-}
+      <h1>
+        Complete Building Material Solutions
+      </h1>
 
-.contact{
-background:#e2e8f0;
-}
+      <p>
+        Retail & wholesale supply of cement and construction materials,
+        with reliable delivery service for your project.
+      </p>
 
-.contact-box{
-max-width:850px;
-margin:auto;
-background:#0f172a;
-color:#fff;
-padding:35px;
-border-radius:22px;
-}
+      <div class="buttons">
 
-.contact-row{
-padding:18px 0;
-border-bottom:1px solid #334155;
-}
+        <a class="btn call"
+           href="tel:7210727274">
+          📞 Call Now
+        </a>
 
-.contact-row:last-child{
-border-bottom:none;
-}
+        <a class="btn whatsapp"
+           href="https://wa.me/917210727274"
+           target="_blank">
+          💬 WhatsApp
+        </a>
 
-.contact-label{
-color:#94a3b8;
-font-weight:bold;
-margin-bottom:5px;
-}
+        <a class="btn location"
+           href="https://maps.app.goo.gl/Z1fmw54KfnCWiV9c7?g_st=ac"
+           target="_blank">
+          📍 Contact & Address
+        </a>
 
-.contact-row a{
-color:#fff;
-text-decoration:none;
-font-size:19px;
-}
+      </div>
 
-.address{
-font-size:18px;
-color:#e2e8f0;
-}
+    </div>
+  </section>
 
-footer{
-background:#020617;
-color:#94a3b8;
-text-align:center;
-padding:30px 20px;
-}
 
-footer strong{
-color:#fff;
-font-size:20px;
-}
+  <!-- PRODUCTS -->
+  <section>
 
-@media(max-width:900px){
+    <h2 class="section-title">
+      Our Products
+    </h2>
 
-.hero-inner{
-grid-template-columns:1fr;
-}
+    <div class="products">
 
-.products{
-grid-template-columns:repeat(2,1fr);
-}
+      <div class="card">
+        <h3>🧱 Cement</h3>
+        <p>Retail & wholesale cement supply.</p>
+      </div>
 
-.service-grid{
-grid-template-columns:1fr;
-}
+      <div class="card">
+        <h3>🏗️ Bajri</h3>
+        <p>Quality construction aggregate supply.</p>
+      </div>
 
-nav{
-display:none;
-}
+      <div class="card">
+        <h3>🧱 Eent</h3>
+        <p>Bricks for residential and commercial projects.</p>
+      </div>
 
-}
+      <div class="card">
+        <h3>⬜ Tiles</h3>
+        <p>Construction and finishing material supply.</p>
+      </div>
 
-@media(max-width:500px){
+      <div class="card">
+        <h3>🚚 Delivery</h3>
+        <p>Reliable delivery service for your project.</p>
+      </div>
 
-section{
-padding:55px 15px;
-}
+      <div class="card">
+        <h3>🏗️ Building Material</h3>
+        <p>Complete building material solutions.</p>
+      </div>
 
-.hero{
-padding:60px 15px;
-}
+    </div>
 
-.hero h1{
-font-size:40px;
-}
+  </section>
+
+
+  <!-- CONTACT -->
+  <section>
+
+    <h2 class="section-title">
+      Contact Us
+    </h2>
+
+    <div class="contact-box">
+
+      <div class="contact-row">
+        <div class="label">DIRECTOR</div>
+        <div class="value">Ramesh Jain — 9971010724</div>
+      </div>
+
+      <div class="contact-row">
+        <div class="label">CONTACT</div>
+        <div class="value">Aman Jain — 7210727274</div>
+      </div>
+
+      <div class="contact-row">
+        <div class="label">OFFICE NUMBER</div>
+        <div class="value">9312936134</div>
+      </div>
+
+      <div class="contact-row">
+        <div class="label">ADDRESS</div>
+        <div class="value">
+          D-119, Gali No. 8, Rajeev Nagar,<br>
+          Near VARUN TVS, Bhopura,<br>
+          Sahibabad, Ghaziabad – 201005
+        </div>
+      </div>
+
+      <div class="contact-buttons">
+
+        <a class="btn whatsapp"
+           href="https://wa.me/917210727274"
+           target="_blank">
+          💬 WhatsApp Us
+        </a>
+
+        <a class="btn location"
+           href="https://maps.app.goo.gl/Z1fmw54KfnCWiV9c7?g_st=ac"
+           target="_blank">
+          📍 Open Location
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</main>
+
+
+<footer>
+  <p>
+    © 2026 S K Jain Traders. All Rights Reserved.
+  </p>
+
+  <p>
+    Building Material Supplier | Cement | Bajri | Eent | Tiles | Delivery
+  </p>
+</footer>
+
+</body>
+</html>
